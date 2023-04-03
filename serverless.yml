@@ -10,7 +10,6 @@ functions:
   callGpt:
     environment:
       OPENAI_API_KEY: ${env:OPENAI_API_KEY}
-      OPENAI_ORGANIZATION_ID: ${env:OPENAI_ORGANIZATION_ID}
     handler: handler.callGpt
     events:
       - alexaSkill: ${env:ALEXA_SKILL_ID}

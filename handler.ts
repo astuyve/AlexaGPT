@@ -4,7 +4,6 @@ import { ErrorHandler, RequestHandler, SkillBuilders } from "ask-sdk";
 import { IntentRequest } from "ask-sdk-model";
 import { Configuration, OpenAIApi } from "openai";
 const config = new Configuration({
-  organization: process.env.OPENAI_ORGANIZATION,
   apiKey: process.env.OPENAI_API_KEY,
 });
 

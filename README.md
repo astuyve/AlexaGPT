@@ -2,6 +2,8 @@
 
 Make your smart speaker actually smart. This serverless function plumbs ChatGPT API into Alexa using AWS Lambda. It's not conversational (yet).
 
+https://user-images.githubusercontent.com/1598537/229524428-c08207d3-cedf-444a-8295-6ebc72f6a8b5.mp4
+
 ## Setup
 - Install [Serverless](https://www.serverless.com) if you don't already have it: `npm i -g serverless`
 - `npm i` 

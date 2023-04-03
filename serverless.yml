@@ -1,0 +1,20 @@
+service: alexa-gpt
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  timeout: 30
+
+functions:
+  callGpt:
+    environment:
+      OPENAI_API_KEY: ${env:OPENAI_API_KEY}
+      OPENAI_ORGANIZATION_ID: ${env:OPENAI_ORGANIZATION_ID}
+    handler: handler.callGpt
+    events:
+      - alexaSkill: ${env:ALEXA_SKILL_ID}
+
+plugins:
+  - serverless-run-watch
+  - serverless-plugin-typescript

@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "ask-sdk": "^2.12.1",
+    "openai": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "serverless-plugin-typescript": "^2.1.4",
+    "serverless-run-watch": "^0.4.1"
+  }
+}
